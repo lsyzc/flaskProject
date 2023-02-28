@@ -1,0 +1,558 @@
+/* 头部 开始 */
+
+li {
+    cursor: pointer;
+}
+
+.header {
+    height: 80px;
+    background-color: black;
+}
+
+.header-mid {
+    height: 80px;
+    width: 1000px;
+    /* background-color: green; */
+    margin: 0 auto;
+    color: white;
+}
+
+.title {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: #1890ff;
+}
+
+.nav {
+    float: right;
+}
+
+.ulList {
+    list-style: none;
+}
+
+.ulList>li {
+    float: left;
+    width: 110px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+}
+
+.ulList>li:hover>a {
+    color: #1890ff;
+}
+
+.ulList>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* 计算机视觉 */
+
+.computer {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.computerOne {
+    width: 120px;
+    float: left;
+    text-align: center;
+    list-style: none;
+}
+
+.computerOne>li {
+    height: 36px;
+}
+
+.computerTwo {
+    width: 120px;
+    float: right;
+    text-align: center;
+    list-style: none;
+}
+
+.computerTwo>li {
+    height: 36px;
+}
+
+.computer .liTitle>a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.computer .a1 {
+    text-decoration: none;
+    color: #1890ff;
+}
+
+.computer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.liBox:hover>.computer {
+    display: block;
+}
+
+
+/*自然语言处理 */
+
+.language {
+    width: 100px;
+    height: 285px;
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.languageOne {
+    width: 95px;
+    /* float: left; */
+    text-align: center;
+}
+
+.languageOne>li {
+    height: 36px;
+}
+
+.language a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.liBox:hover>.language {
+    display: block;
+}
+
+
+/* 数据服务 */
+
+.data {
+    width: 120px;
+    height: 105px;
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.dataOne {
+    width: 110px;
+    /* float: left; */
+    text-align: center;
+}
+
+.dataOne>li {
+    height: 36px;
+}
+
+.data a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.liBox:hover>.data {
+    display: block;
+}
+
+
+/* 解决方案 */
+
+.solution {
+    width: 120px;
+    height: 175px;
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.solutionOne {
+    text-align: center;
+    width: 110px;
+    float: left;
+}
+
+.solutionOne>li {
+    height: 36px;
+}
+
+.solution a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.solution .a1 {
+    text-decoration: none;
+    color: #1890ff;
+}
+
+.liBox:hover>.solution {
+    display: block;
+}
+
+
+/* 头部 结束 */
+
+
+/* footer开始 */
+
+.footer {
+    height: 100px;
+    background-color: black;
+}
+
+.footer-mid {
+    height: 100px;
+    width: 1000px;
+    /* background-color: green; */
+    margin: 0 auto;
+    color: white;
+}
+
+.footer .box {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer a {
+    color: white;
+    padding-right: 40px;
+}
+
+.footer a:hover {
+    color: #1890ff;
+}
+
+.footer .beian {
+    padding-top: 10px;
+}
+
+
+/* footer结束 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* banner 开始*/
+
+.banner {
+    width: 100%;
+    height: 478px;
+    background-image: url(../images/recognize/images/background.jpg);
+    background-size: cover;
+    background-position: 50% center;
+}
+
+.banner .box {
+    height: 478px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.banner .box .boxx {
+    height: 478px;
+    width: 270px;
+    /* background-color: green; */
+}
+
+.banner .boxOne {
+    font-size: 45px;
+    color: white;
+    padding-top: 100px;
+}
+
+.banner .boxTwo {
+    color: white;
+    font-size: 14px;
+    padding-top: 50px;
+}
+
+.banner .boxThree {
+    /* color: white;
+    font-size: 15px; */
+    padding-top: 100px;
+}
+
+.banner .boxThree input {
+    width: 100px;
+    height: 45px;
+    border-radius: 7px;
+    border: 1px solid #000;
+    color: #606266;
+    cursor: pointer;
+}
+
+.banner .boxThree input:hover {
+    border: 1px solid #409eff;
+    color: #409eff;
+}
+/* banner 结束*/
+/* section开始 */
+/* sectionOne */
+
+.section .sectionOne {
+    height: 180px;
+    width: 1000px;
+    margin: 0 auto;
+    color: #101010;
+    /* background-color: green; */
+}
+
+.sectionOne .sectionOnetitle {
+    text-align: center;
+    font-size: 28px;
+    width: 1000px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.sectionOne img {
+    padding: 26px;
+    float: left;
+    /* background-color: #409eff; */
+}
+
+.sectionOne .boxOne {
+    height: 100px;
+    width: 400px;
+    float: left;
+    background-color: #fff;
+}
+
+.boxOne .content {
+    display: inline-block;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #2c3e50;
+}
+
+.boxOne .contentxt {
+    font-size: 14px;
+}
+
+.sectionOne .boxTwo {
+    height: 100px;
+    width: 400px;
+    float: right;
+    background-color: #fff;
+}
+/* sectionTwo */
+
+.section .sectionTwo {
+    height: 645px;
+    width: 1100px;
+    margin: 0 auto;
+    color: #101010;
+    /* background-color: green; */
+}
+
+.sectionTwo .sectionTwotitle {
+    text-align: center;
+    font-size: 28px;
+    width: 1100px;
+    height: 80px;
+    line-height: 80px;
+    padding-bottom: 20px;
+}
+
+.sectionTwo .boxOne {
+    position: relative;
+    float: left;
+    width: 74%;
+    height: 545px;
+    /* background-image: url(../images/background.jpg); */
+    background-size: cover;
+    background-position: 50% center;
+    background-image: url(../images/recognize/images/plant-example-0.fd99ceab.jpg);
+}
+
+.sectionTwo .boxOne a {
+    text-align: center;
+    float: right;
+    background-color: #0073eb;
+    color: #fff;
+    width: 26%;
+    height: 12%;
+    line-height: 62px;
+}
+
+.sectionTwo .boxOne .bottom {
+    padding-left: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 18%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.sectionTwo .boxOne .bottomOne {
+    height: 76px;
+    line-height: 76px;
+    /* background-color: green; */
+    /* line-height: 33px; */
+    /* font-size: 12px;
+    color: #cccccc; */
+    color: #fff;
+}
+
+.sectionTwo .boxOne .bottomOne .txt {
+    width: 60%;
+    height: 55%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.sectionTwo .boxOne .bottomOne .jiance {
+    width: 10%;
+    height: 55%;
+    border-radius: 5px;
+    border: 1px solid #909399;
+    color: #fff;
+    background-color: #909399;
+}
+
+.sectionTwo .boxOne .bottomOne .jiance:hover {
+    border: 1px solid #a6a9ad;
+    color: #fff;
+    cursor: pointer;
+    background-color: #a6a9ad;
+}
+
+.sectionTwo .boxOne .bottomOne .shangchuan {
+    width: 13%;
+    height: 55%;
+    border-radius: 5px;
+    border: 1px solid #409eff;
+    color: #fff;
+    background-color: #409eff;
+}
+
+.sectionTwo .boxOne .bottomOne .shangchuan:hover {
+    border: 1px solid #66b1ff;
+    color: #fff;
+    cursor: pointer;
+    background-color: #66b1ff;
+}
+
+.sectionTwo .boxOne .bottomTwo {
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #e9d6cf;
+    padding-left: 2px;
+}
+
+.sectionTwo .boxTwo {
+    float: right;
+    width: 285px;
+    height: 545px;
+    /* background-color: yellow; */
+}
+
+.sectionTwo .boxTwo img {
+    width: 217px;
+    height: 133px;
+    padding-left: 68px;
+    cursor: pointer;
+}
+/* sectionThree */
+
+.section .sectionThree {
+    height: 300px;
+    width: 1100px;
+    margin: 0 auto;
+    color: #101010;
+    padding-top: 20px;
+    /* background-color: green; */
+}
+
+.sectionThree .sectionThreetitle {
+    text-align: center;
+    font-size: 28px;
+    width: 1100px;
+    height: 80px;
+    line-height: 80px;
+    padding-bottom: 40px;
+}
+
+.sectionThree .boxOne {
+    width: 1030px;
+    height: 180px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-left: 80px;
+}
+
+.sectionThree .boxOne .contentxt {
+    font-size: 16px;
+}
+
+.sectionThree .boxOne img {
+    float: right;
+}
+/* section结束 */
+/* 联系我们按钮 */
+
+.sectionFour {
+    width: 1000px;
+    height: 45px;
+    /* background-color: green; */
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+.sectionFour .input {
+    width: 100px;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+.sectionFour input {
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #409eff;
+    color: #fff;
+    background-color: #409eff;
+}
+
+.sectionFour input:hover {
+    border: 1px solid #66b1ff;
+    color: #fff;
+    cursor: pointer;
+    background-color: #66b1ff;
+}

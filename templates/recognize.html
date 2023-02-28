@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尚云AI平台</title>
+
+
+
+
+    <script src="../static/js/common.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link type="text/css" href="static/assets/css/theme.css" rel="stylesheet">
+    <!-- Demo CSS - No need to use these in your project -->
+    <link type="text/css" href="static/assets/css/demo.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/common.css">
+
+</head>
+
+<body>
+
+
+     <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark bg-dark py-4">
+      <div class="container">
+        <a class="navbar-brand" href={{ url_for('index') }}><strong>农业害虫</strong> 识别系统</a>
+        <button class="navbar-toggler" type="button" data-action="offcanvas-open" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbar_main">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Menu</h6>
+            <li class="nav-item active">
+              <a class="nav-link" href={{ url_for('index') }}>概览</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar_main_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">页面</a>
+              <div class="dropdown-menu" aria-labelledby="navbar_1_dropdown_1">
+                <a class="dropdown-item" href={{ url_for('homepage') }}>主页</a>
+                <a class="dropdown-item" href={{ url_for('about') }}>关于我们</a>
+                <a class="dropdown-item" href={{ url_for('sign_in') }}>登录</a>
+                <a class="dropdown-item" href={{ url_for('contact') }}>联系我们</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="https://github.com/webpixels/boomerang-ui-kit/archive/master.zip" target="_blank" class="nav-link d-lg-none">Download Free</a>
+              <a href="https://github.com/webpixels/boomerang-ui-kit/archive/master.zip" target="_blank" class="btn btn-sm bg-white d-none d-lg-inline-flex">Download Free</a>
+            </li>
+            <div class="dropdown-divider d-lg-none my-4"></div>
+            <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Social Media</h6>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://instagram.com/webpixelsofficial/" target="_blank"><i class="fab fa-instagram"></i><span class="ml-2 d-lg-none">Instagram</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://web.facebook.com/webpixels" target="_blank"><i class="fab fa-facebook"></i><span class="ml-2 d-lg-none">Facebook</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://dribbble.com/webpixels" target="_blank"><i class="fab fa-dribbble"></i><span class="ml-2 d-lg-none">Dribbble</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="https://github.com/webpixels" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+
+        <div class="box">
+            <div class="boxx">
+                <div class="boxOne">
+                    农业害虫识别
+                </div>
+                <div class="boxTwo">
+                    支持百种花卉识别，返回中英文名称
+                </div>
+                <div class="boxThree">
+                    <input type="button" src="" value="联系我们">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+
+        <div class="sectionOne">
+            <div class="sectionOnetitle">功能介绍</div>
+            <div class="box">
+                <div class="boxOne">
+                    <img src="../static/images/recognize/images/yezi.png" alt="">
+                    <span class="content">
+                        <h2 class="contentTitle">识别物体名称</h2><br>
+                        <span class="contentxt">支持上百种农业害虫识别，返回中英文名称</span>
+                    </span>
+                </div>
+                <div class="boxOne boxTwo">
+                    <img src="../static/images/recognize/images/xiaoxi.png" alt="">
+                    <span class="content">
+                        <h2 class="contentTitle">获取防治信息</h2><br>
+                        <div class="contentxt">支持返回百科词条URL</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="sectionTwo">
+            <div class="sectionTwotitle">功能演示</div>
+            <div class="box">
+                <div class="boxOne" id="imgCenter">
+                    <a href="#"><span title="查看详情">识别结果：</span>玫瑰 (rose)</a>
+
+
+                    <div class="bottom">
+                        <div class="bottomOne">
+                            <input type="text" placeholder="&nbsp;&nbsp;&nbsp;请输入网络图片URL" id="input_box" class="txt">&nbsp;&nbsp;
+                            <input type="button" value="检测" class="jiance" id="JianCe">&nbsp;&nbsp;&nbsp;或&nbsp;&nbsp;&nbsp;
+                            <input type="button" value="本地上传" class="shangchuan">
+                        </div>
+                        <div class="bottomTwo">
+                            图片文件类型支持PNG、JPG、JPEG，图片大小不超过2M。
+                        </div>
+                    </div>
+
+                </div>
+                <div class="boxTwo">
+                    <div class="img">
+                        <div class="item one">
+                            <img src="../static/images/recognize/images/xiao1.jpg" alt="" srcset="" id="img1">
+                        </div>
+
+                        <div class="item two"><img src="../static/images/recognize/images/xiao2.jpg" alt="" srcset="" id="img2"></div>
+                        <div class="item three"><img src="../static/images/recognize/images/xiao3.jpg" alt="" srcset="" id="img3"></div>
+                        <div class="item four"><img src="../static/images/recognize/images/xiao4.jpg" alt="" srcset="" id="img4"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="sectionThree">
+            <div class="sectionThreetitle">应用场景</div>
+            <div class="box">
+                <div class="boxOne">
+                    <span class="content">
+                        <h3 class="contentTitle">拍照识图</h3>
+                        <span class="contentxt">在移动设备上，通过拍摄图片，识别农作物害虫，广泛应用于拍照识图应用中。</span>
+                    </span>
+                    <img src="../static/images/recognize/images/plant-feature.ac56883d.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sectionFour">
+        <div class="box">
+            <div class="input">
+                <input type="button" src="" value="联系我们">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!-- Core -->
+    <script src="../static/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/assets/vendor/popper/popper.min.js"></script>
+    <script src="../static/assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- FontAwesome 5 -->
+    <script src="../static/assets/vendor/fontawesome/js/fontawesome-all.min.js" defer></script>
+    <!-- Page plugins -->
+    <script src="../static/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="../static/assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="../static/assets/vendor/input-mask/input-mask.min.js"></script>
+    <script src="../static/assets/vendor/nouislider/js/nouislider.min.js"></script>
+    <script src="../static/assets/vendor/textarea-autosize/textarea-autosize.min.js"></script>
+    <!-- Theme JS -->
+    <script src="../static/assets/js/theme.js"></script>
+</body>
+<script>
+     var btn = document.getElementById('JianCe');
+    var dv =document.getElementById('dv');
+    var input_box = document.getElementById('input_box')
+    btn.onclick = function () {
+
+        var value = input_box.value.trim();
+        if(value==""){
+            return;
+            alert("请输入url");
+
+        }
+
+        // 1 获取ajax引擎对象
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        // 2 监听
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                // responseText;
+                console.log(responseText);
+                var result = JSON.parse(xmlhttp.responseText);
+                //设置大图
+
+
+            }
+        }
+
+        // 3 发送
+        // 请求方式,请求的url,是否异步
+        xmlhttp.open("GET", "getResult?paramValue="+value, true);
+        // 发送
+        xmlhttp.send();
+    }
+
+
+</script>
+
+
+
+</html>
